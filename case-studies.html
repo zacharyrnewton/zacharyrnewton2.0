@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<header class="header-home">
-  {% include nav.html %}
+<header class="header-main header-home">
   <div class="home-title">
     <h1>{{ site.title }}</h1>
     <h3>{{ site.title_meta }}</h3>
   </div>
+  <img src="{{ site.baseurl }}/assets/img/home-hero.jpg" width="100%" height="auto" />
+  <div class="overlay-light"></div>
+  {% include nav.html %}
 </header>
