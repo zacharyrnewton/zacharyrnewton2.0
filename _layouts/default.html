@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <title>{{ site.title }}</title>
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
+    {% include head.html %}
   </head>
   <body>
     {{ content }}
-    <script type="text/javascript" src="{{ site.baseurl}}/assets/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl}}/assets/js/functions.js"></script>
+    {% include javalinks.html %}
   </body>
 </html>
