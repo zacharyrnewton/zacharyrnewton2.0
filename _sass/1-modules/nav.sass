@@ -1,9 +1,12 @@
 nav.nav-wrap
+  transition: all 0.3s ease-in
   max-width: 1000px
   display: flex
   justify-content: space-between
   margin: auto
   padding: 40px
+  @media screen and (max-width: 600px)
+    padding: 35px 20px
   .nav-logo
     height: 50px
     svg
@@ -19,5 +22,10 @@ nav.nav-wrap
     li
       display: block
       padding-right: 30px
+      a
+        color: $primary
+        transition: all 0.1s ease-in
+      a:hover
+        color: $secondary
     li:last-of-type
       padding-right: 0
