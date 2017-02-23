@@ -34,5 +34,5 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-# sass:
-#     sass_dir: _sass
+sass:
+  sass_dir: _sass
