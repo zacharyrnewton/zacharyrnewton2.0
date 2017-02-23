@@ -1,10 +1,10 @@
 <nav class="nav-wrap">
-  <a href="{{ site.baseurl}}/"class="nav-logo">
+  <a href="{{ site.baseurl}}/" class="nav-logo {% if page.url == '/' %}nav-logo-dark{% endif %}">
     {% include logo.html %}
   </a>
-  <ul class="navigation">
-    <li><a href="">Home</a></li>
-    <li><a href="">Case Studies</a></li>
-    <li><a href="">Blog</a></li>
+  <ul class="navigation {% if page.url == '/' %}nav-dark{% endif %}">
+    <li><a href="{{ site.baseurl}}/">Home</a></li>
+    <li><a href="{{ site.baseurl}}/case-studies">Case Studies</a></li>
+    <li><a href="{{ site.baseurl}}/blog">Blog</a></li>
   </ul>
 </nav>

@@ -27,6 +27,7 @@ youtube_path: https://www.youtube.com/channel/UCWfGm9LosEAeQVMZsp2HgAw
 github_path: https://github.com/zacharyrnewton
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 # theme: minima
 gems:
