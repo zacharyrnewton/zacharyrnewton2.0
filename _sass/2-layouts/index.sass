@@ -55,19 +55,60 @@ header.header-main
   margin: 160px auto
   padding: 0 20px
   h2
-    font-size: 1.875em
-    font-weight: 500
-    line-height: 1.2em
-    opacity: .85
     padding-bottom: 17px
   p
-    font-size: 1em
-    font-weight: 200
-    line-height: 2.5em
-    color: $secondary
     a
       font-weight: 600
       color: $highlight
       transition: all 0.15s ease-in-out
       &:hover
         color: $secondary
+
+h2.recent-projects
+  text-align: center
+  padding-top: 100px
+.recent-projects-content-wrap
+  margin: auto
+  max-width: 800px
+  padding: 60px 20px 0 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .project-wrap
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    &.project-wrap-reverse
+      justify-content: flex-end
+      .project
+        flex-direction: row-reverse
+        .project-text
+          text-align: right
+          padding-right: 15px
+          padding-left: 0
+    .project
+      max-width: 465px
+      height: 100px
+      margin: 20px 0
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      .project-img
+        background: $primary
+        height: 100px
+        width: 100px
+        flex: 0 0 100px
+      .project-text
+        height: 100%
+        width: 100%
+        padding-left: 15px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        h6
+          display: block
+          margin: 0
+          padding: 0
+          line-height: 1.2272727273em
+        p
+          line-height: 1.1875em
