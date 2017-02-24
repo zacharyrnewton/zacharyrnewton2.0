@@ -63,10 +63,11 @@ header.header-main
       transition: all 0.15s ease-in-out
       &:hover
         color: $secondary
-
+//Recent Project
 h2.recent-projects
   text-align: center
   padding-top: 100px
+
 .recent-projects-content-wrap
   margin: auto
   max-width: 800px
@@ -78,16 +79,6 @@ h2.recent-projects
     width: 100%
     display: flex
     justify-content: flex-start
-    &.project-wrap-reverse
-      justify-content: flex-end
-      .project
-        flex-direction: row-reverse
-        @media screen and(max-width: 465px)
-          flex-direction: column
-        .project-text
-          text-align: right
-          padding-right: 15px
-          padding-left: 0
     .project
       max-width: 465px
       min-height: 100px
@@ -95,8 +86,6 @@ h2.recent-projects
       display: flex
       flex-direction: row
       justify-content: space-around
-      @media screen and(max-width: 465px)
-        flex-direction: column
       .project-img
         background: $primary
         height: 100px
@@ -116,3 +105,25 @@ h2.recent-projects
           line-height: 1.2272727273em
         p
           line-height: 1.1875em
+  .project-wrap-reverse
+    justify-content: flex-end
+    .project
+      flex-direction: row-reverse
+      .project-text
+        text-align: right
+        padding-right: 15px
+        padding-left: 0
+  @media screen and(max-width: 465px)
+    .project-wrap
+      .project
+        flex-direction: column
+        .project-text
+          padding: 0
+    .project-wrap-reverse
+      .project
+        align-items: flex-end
+        flex-direction: column
+        .project-img
+          float: right
+        .project-text
+          padding: 0
