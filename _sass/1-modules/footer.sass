@@ -12,11 +12,27 @@ footer.footer-wrapper
       padding-bottom: 5px
     p
       line-height: 1.375em
-  .mailchimp-form-wrap
+  #mc_embed_signup
     width: 100%
     max-width: 600px
+    padding: 30px 0 60px 0
     form
+    #mc_embed_signup_scroll
       display: flex
       flex-direction: row
+      flex-grow: 2
+      flex-wrap: nowrap
+      .mc-field-group
+        flex-grow: 2
+      input.email
+        height: 60px
+        width: 100%
+        border: 2px solid $highlight
+      input#mc-embedded-subscribe
+        width: 150px
+        height: 60px
+        background: $highlight
+        color: $white
+        border: none
     label
       display: none
