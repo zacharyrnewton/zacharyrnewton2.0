@@ -3,7 +3,9 @@
     <h2>Newsletter</h2>
     <p>Stay connected and get updates on projects I am working on</p>
   </div>
-  {% include newsletter-form.html %}
+  <div id="newsletter">
+    {% include newsletter-form.html %}
+  </div>
   <div class="footer-social-links">
     <a href="{{ site.facebook_path }}" target="_blank" class="social-icon-wrap footer-facebook-wrapper">{% include facebook-logo.html %}</a>
     <a href="{{ site.twitter_path }}" target="_blank" class="social-icon-wrap footer-twitter-wrapper">{% include twitter-logo.html %}</a>
