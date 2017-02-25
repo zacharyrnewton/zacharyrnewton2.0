@@ -32,7 +32,7 @@ markdown: kramdown
 # theme: minima
 gems:
   - jekyll-feed
-  - octopress-autoprefixer
+  - jekyll-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
