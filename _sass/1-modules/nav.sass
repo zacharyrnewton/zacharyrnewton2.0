@@ -4,7 +4,7 @@ nav.nav-wrap
   top: 0
   left: 0
   right: 0
-  z-index: 1000
+  z-index: 900
   max-width: 1000px
   display: flex
   justify-content: space-between
@@ -31,6 +31,8 @@ nav.nav-wrap
     flex-direction: row
     justify-content: center
     align-items: center
+    @media screen and(max-width: 600px)
+      display: none
     li
       display: block
       padding-right: 30px
@@ -47,6 +49,8 @@ nav.nav-wrap
     flex-direction: row
     justify-content: center
     align-items: center
+    @media screen and(max-width: 600px)
+      display: none
     li
       display: block
       padding-right: 30px
@@ -57,3 +61,61 @@ nav.nav-wrap
         color: $secondary
     li:last-of-type
       padding-right: 0
+//Toggled Nav
+.nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper
+  display: none
+@media screen and(max-width: 600px)
+  .nav-toggle-open-wrapper, .nav-toggle-close-wrapper
+    position: relative
+    z-index: 1001
+    height: 50px
+    width: 50px
+    background: pink
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+  .toggled-nav-wrapper
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 1002
+    width: 300px
+    height: 100%
+    padding: 35px 20px 35px 0
+    background: $white
+    .internal-nav-links-wrapper, .external-links-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      text-align: right
+    hr
+      width: 100%
+      margin: 30px 0 60px 0
+    .internal-nav-links-wrapper
+      margin-top: 50px
+      height: 192px
+      a.internal-link-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+        .internal-link-icon
+          height: 30px
+          width: 30px
+          background: pink
+    .external-links-wrapper
+      height: 122px
+      a.external-link-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+        .external-link-icon
+          height: 30px
+          width: 30px
+          background: pink
