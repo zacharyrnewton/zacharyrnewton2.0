@@ -22,6 +22,8 @@ footer.footer-wrapper
       flex-direction: row
       flex-grow: 2
       flex-wrap: nowrap
+      @media screen and(max-width: 370px)
+        flex-direction: column
       .mc-field-group
         flex-grow: 2
       input.email
@@ -34,6 +36,8 @@ footer.footer-wrapper
         font-family: $font-stack-two
         font-weight: 600
         border-radius: 3px 0 0 3px
+        @media screen and(max-width: 370px)
+          border-radius: 3px 3px 0 0
       input::placeholder
         color: $secondary
         opacity: .65
@@ -51,6 +55,11 @@ footer.footer-wrapper
         font-weight: 600
         letter-spacing: -.5px
         cursor: pointer
+        @media screen and(max-width: 500px)
+          width: 100px
+        @media screen and(max-width: 370px)
+          border-radius: 0 0 3px 3px
+          width: 100%
     label
       display: none
   .footer-social-links
