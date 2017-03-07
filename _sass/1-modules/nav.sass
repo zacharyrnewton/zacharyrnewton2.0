@@ -62,82 +62,65 @@ nav.nav-wrap
     li:last-of-type
       padding-right: 0
 //Toggled Nav
-.nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper, .nav-toggle-body-overlay
-  display: none
-@media screen and(max-width: 600px)
-  .nav-toggle-body-overlay
-    transition: opacity 3s ease-in-out
-    display: block
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: 1000
-    width: 100%
-    height: 100%
-    background: rgba(0,0,0,0.7)
-    opacity: 0
-    transform: translateX(100%)
-  .nav-toggle-open-wrapper, .nav-toggle-close-wrapper
-    position: relative
-    height: 50px
-    width: 50px
+.nav-toggle-open-wrapper, .nav-toggle-close-wrapper
+  position: relative
+  height: 50px
+  width: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+.nav-toggle-open-wrapper
+  z-index: 999
+  background:
+    image: url('../img/icons/open-ham.svg')
+    size: 24px
+    position: center center
+    repeat: no-repeat
+.nav-toggle-close-wrapper
+  background:
+    image: url('../img/icons/close-ham.svg')
+    size: 24px
+    position: center center
+    repeat: no-repeat
+.toggled-nav-wrapper
+  transition: all 0.2s ease-in-out
+  display: flex
+  align-items: flex-end
+  flex-direction: column
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 1002
+  width: 300px
+  height: 100%
+  padding: 35px 20px 35px 0
+  background: $white
+  transform: translateX(300px)
+  .internal-nav-links-wrapper, .external-links-wrapper
     display: flex
-    justify-content: center
-    align-items: center
-    cursor: pointer
-  .nav-toggle-open-wrapper
-    z-index: 999
-    background:
-      image: url('../img/icons/open-ham.svg')
-      size: 24px
-      position: center center
-      repeat: no-repeat
-  .nav-toggle-close-wrapper
-    background:
-      image: url('../img/icons/close-ham.svg')
-      size: 24px
-      position: center center
-      repeat: no-repeat
-  .toggled-nav-wrapper
-    transition: all 3s ease-in-out
-    display: flex
-    align-items: flex-end
     flex-direction: column
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    z-index: 1002
-    width: 300px
-    height: 100%
-    padding: 35px 20px 35px 0
-    background: $white
-    transform: translateX(300px)
-    .internal-nav-links-wrapper, .external-links-wrapper
+    justify-content: space-between
+    text-align: right
+  hr
+    width: 100%
+    margin: 30px 0 60px 0
+  .internal-nav-links-wrapper
+    margin-top: 50px
+    height: 192px
+    a.internal-link-wrapper
       display: flex
-      flex-direction: column
-      justify-content: space-between
-      text-align: right
-    hr
-      width: 100%
-      margin: 30px 0 60px 0
-    .internal-nav-links-wrapper
-      margin-top: 50px
-      height: 192px
-      a.internal-link-wrapper
-        display: flex
-        flex-direction: row
-        justify-content: flex-end
-        align-items: center
-    .external-links-wrapper
-      height: 122px
-      a.external-link-wrapper
-        display: flex
-        flex-direction: row
-        justify-content: flex-end
-        align-items: center
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+  .external-links-wrapper
+    height: 122px
+    a.external-link-wrapper
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
 .external-link-icon, .internal-link-icon
   height: 30px
   width: 30px
@@ -158,10 +141,29 @@ nav.nav-wrap
   background-image: url('../img/icons/twitter-on-blue.svg')
 .external-link-icon-instagram
   background-image: url('../img/icons/instagram.svg')
-
+.nav-toggle-body-overlay
+  transition: opacity 0.2s ease-in-out, transform 0s ease-in-out 0.2s
+  display: block
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1000
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.7)
+  opacity: 0
+  transform: translateX(100%)
 html.nav-open
+  body
+    overflow: hidden
   .nav-toggle-body-overlay
+    transition: opacity 0.2s ease-in-out, transform 0s
     opacity: 1
     transform: translateX(0)
   .toggled-nav-wrapper
     transform: translateX(0)
+@media screen and(min-width: 600px)
+  .nav-toggle-open-wrapper, .nav-toggle-close-wrapper, .toggled-nav-wrapper, .nav-toggle-body-overlay
+    display: none
