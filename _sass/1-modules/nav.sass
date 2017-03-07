@@ -66,7 +66,7 @@ nav.nav-wrap
   display: none
 @media screen and(max-width: 600px)
   .nav-toggle-body-overlay
-    transition: all 0.15s ease-in
+    transition: opacity 3s ease-in-out
     display: block
     position: fixed
     top: 0
@@ -78,11 +78,9 @@ nav.nav-wrap
     height: 100%
     background: rgba(0,0,0,0.7)
     opacity: 0
-    &.toggle
-      opacity: 1
+    transform: translateX(100%)
   .nav-toggle-open-wrapper, .nav-toggle-close-wrapper
     position: relative
-    z-index: 1001
     height: 50px
     width: 50px
     display: flex
@@ -90,6 +88,7 @@ nav.nav-wrap
     align-items: center
     cursor: pointer
   .nav-toggle-open-wrapper
+    z-index: 999
     background:
       image: url('../img/icons/open-ham.svg')
       size: 24px
@@ -102,7 +101,7 @@ nav.nav-wrap
       position: center center
       repeat: no-repeat
   .toggled-nav-wrapper
-    transition: transform 0.15s ease-in
+    transition: all 3s ease-in-out
     display: flex
     align-items: flex-end
     flex-direction: column
@@ -116,8 +115,6 @@ nav.nav-wrap
     padding: 35px 20px 35px 0
     background: $white
     transform: translateX(300px)
-    &.open
-      transform: translateX(0)
     .internal-nav-links-wrapper, .external-links-wrapper
       display: flex
       flex-direction: column
@@ -161,3 +158,10 @@ nav.nav-wrap
   background-image: url('../img/icons/twitter-on-blue.svg')
 .external-link-icon-instagram
   background-image: url('../img/icons/instagram.svg')
+
+html.nav-open
+  .nav-toggle-body-overlay
+    opacity: 1
+    transform: translateX(0)
+  .toggled-nav-wrapper
+    transform: translateX(0)
