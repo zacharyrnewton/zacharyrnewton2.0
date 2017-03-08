@@ -70,19 +70,20 @@ nav.nav-wrap
   justify-content: center
   align-items: center
   cursor: pointer
+  overflow: visible
+  svg
+    width: 24px
+    height: auto
 .nav-toggle-open-wrapper
   z-index: 999
-  background:
-    image: url('../img/icons/open-ham.svg')
-    size: 24px
-    position: center center
-    repeat: no-repeat
+  svg
+    stroke: $white
+.nav-toggle-open-wrapper.toggle-dark
+  svg
+    stroke: $primary
 .nav-toggle-close-wrapper
-  background:
-    image: url('../img/icons/close-ham.svg')
-    size: 24px
-    position: center center
-    repeat: no-repeat
+  svg
+    stroke: $primary
 .toggled-nav-wrapper
   transition: all 0.2s ease-in-out
   display: flex
