@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-<header class="header-main" style="background-image:url('{{ site.baseurl }}/assets/img/home-hero.jpg')">
-  <div class="overlay-light"></div>
+<header class="blog-index-header-main" style="background-image:url('{{ site.baseurl }}/assets/img/blog-index-hero.jpg')">
+  <div class="overlay-dark"></div>
   {% include nav.html %}
-  <div class="home-title">
-    <h1>{{ site.title }}</h1>
-    <h3>{{ site.title_meta }}</h3>
+  <div class="blog-index-title">
+    <h1 class="featured-blog-post-title">Featured Blog Post To Read</h1>
+    <a class="read-featured-blog-post" href="">Read</a>
   </div>
-  <a href="#blurb" class="home-avatar"></a>
 </header>
 {% include footer.html %}
