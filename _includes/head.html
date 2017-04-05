@@ -4,6 +4,11 @@
 <meta name="description" content="{{ site.description }}">
 <title>{{ site.title }}</title>
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
 <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
 <!--
