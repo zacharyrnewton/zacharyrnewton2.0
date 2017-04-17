@@ -5,8 +5,10 @@
   padding: 100px 20px 0 20px
   p
     font-family: $font-stack-two
+    font-weight: 300
     color: $primary
     line-height: 2em
+    padding: 2em 0
   p.dropCap::first-letter
     font-size: 3.5em
     font-weight: 400
@@ -14,10 +16,11 @@
     color: $highlight
   p.centeredDesc
     text-align: center
-  br
-    line-height: 2em
-
+  p.noPad
+    padding: 0
   img
+    overflow: hidden
     width: 100%
     height: auto
-    border-radius: 3px
+    border-radius: 30px
+    padding: 2em 0
