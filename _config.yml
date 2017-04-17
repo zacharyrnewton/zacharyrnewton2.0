@@ -19,7 +19,6 @@ email: zacharyrnewton@gmail.com
 description: Zachary R Newton is a freelance designer & developer who has been working professionally since 2013. He loves to solve problems and make visually stunning products. Zachary also enjoys sharing his experiences and thoughts in his blog. Keep up with new projects he is working on, subscribe to his newsletter and go follow him on Twitter.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zacharyrnewton.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: https://zacharyrnewton.com
 enforce_ssl: zacharyrnewton.com
 
 twitter_path: https://twitter.com/_zacharyrnewton
@@ -27,6 +26,9 @@ instagram_path: https://www.instagram.com/zacharyrnewton/
 facebook_path: https://www.facebook.com/zacharyrnewton
 youtube_path: https://www.youtube.com/channel/UCWfGm9LosEAeQVMZsp2HgAw
 github_path: https://github.com/zacharyrnewton
+
+linkFromTwitter: https%3A%2F%2Fzacharyrnewton.com%2f
+twitterUser: _zacharyrnewton
 
 # Build settings
 permalink: pretty
