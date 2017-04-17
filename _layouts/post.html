@@ -1,4 +1,13 @@
 ---
 layout: default
 ---
+<header class="blog-index-header-main" style="background-image:url('{{ site.url }}{{ page.featImg }}">
+  <div class="overlay-dark"></div>
+  {% include nav.html %}
+  <div class="blog-index-title">
+    <h1 class="featured-blog-post-title">{{ page.title }}</h1>
+  </div>
+</header>
+<div class="blogPostContentWrapper">
 {{ content }}
+</div>
