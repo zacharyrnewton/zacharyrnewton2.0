@@ -8,7 +8,7 @@
     font-weight: 300
     color: $primary
     line-height: 2em
-    margin: 2em 0
+    padding: 2em 0
   p.dropCap::first-letter
     font-size: 3.5em
     font-weight: 400
@@ -16,11 +16,33 @@
     color: $highlight
   p.centeredDesc
     text-align: center
-  p.noMargin
-    margin: 0
+  p.noPad
+    padding: 0
+  a
+    color: $highlight
+    font-weight: 600
+    &:hover
+      color: $secondary
+  a.lg-blockquote
+    font-family: $font-stack
+    font-size: 2em
+    font-weight: 200
+    color: $highlight
+    line-height: 1.5em
+    display: block
+    text-align: center
+    margin: 1em auto
+    max-width: 500px
+    transition: all 0.3s ease-in-out
+    &:hover
+      color: $secondary
+  li
+    list-style: circle
   img
+    display: block
     width: 100%
     height: auto
-    //padding: 2em 0
+    margin: 2em auto
     overflow: hidden
     border-radius: 3px
+    cursor: zoom-in
