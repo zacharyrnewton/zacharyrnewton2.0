@@ -3,21 +3,34 @@
   max-width: 800px
   margin: auto
   padding: 100px 20px 0 20px
+  h4
+    font-family: $font-stack
+    font-weight: 500
+    font-size: 1.5em
+    color: $primary
+    padding-top: .5em
+
+  br
+    line-height: 2em
   p
     font-family: $font-stack-two
     font-weight: 300
     color: $primary
     line-height: 2em
     padding: 2em 0
-  p.dropCap::first-letter
+  .dropCap::first-letter
     font-size: 3.5em
     font-weight: 400
     font-family: $font-stack
     color: $highlight
-  p.centeredDesc
+  .centeredDesc
     text-align: center
-  p.noPad
+  .noPad
     padding: 0
+  .noTopPad
+    padding-top: 0
+  .noBottomPad
+    padding-bottom: 0
   a
     color: $highlight
     font-weight: 600
@@ -36,8 +49,10 @@
     transition: all 0.3s ease-in-out
     &:hover
       color: $secondary
+  ul.noMargin, ol.noMargin
+    margin: 0
   li
-    list-style: circle
+    line-height: 1.5em
   img
     display: block
     width: 100%
@@ -46,3 +61,12 @@
     overflow: hidden
     border-radius: 3px
     cursor: zoom-in
+  .underline
+    text-decoration: underline
+
+h5.readMoreCTA
+  text-align: center
+  font-size: 1.2em
+  font-weight: 500
+  font-family: $font-stack
+  padding: 2em 0
