@@ -59,6 +59,7 @@
   a
     color: $highlight
     font-weight: 600
+    cursor: pointer
     &:hover
       color: $secondary
   a.lg-blockquote
@@ -74,10 +75,15 @@
     transition: all 0.3s ease-in-out
     &:hover
       color: $secondary
+  ul, ol
+    font-weight: 300
   ul.noMargin, ol.noMargin
     margin: 0
   li
     line-height: 1.5em
+    margin-bottom: 1em
+  li:last-of-type
+    margin-bottom: 0
   img
     display: block
     width: 100%
@@ -99,7 +105,7 @@ h5.readMoreCTA
 .blogReadMoreWrapper
   width: 100%
   max-width: 1200px
-  margin: 0 auto 100px auto
+  margin: 0 auto 0 auto
   padding: 0 20px
   display: flex
   flex-direction: row
@@ -107,10 +113,5 @@ h5.readMoreCTA
   align-items: center
   flex-wrap: wrap
   align-items: baseline
-  .blogPostContainer
-    margin: 0 5px 0 5px
   @media screen and(max-width: 700px)
     padding: 0
-    .blogPostContainer
-      max-width: 100%
-      margin: 0 0px 0 0px

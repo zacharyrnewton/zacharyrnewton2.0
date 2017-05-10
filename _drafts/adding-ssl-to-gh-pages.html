@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Adding SSL to gh-pages"
+categories: gh-pages
+featImg: /assets/img/blog/2017-05-20-adding-ssl-to-gh-pages.jpg
+excerpt: "If you are a good web developer and you care about your users, you should have SSL on your website."
+author: zacharynewton
+---
+<p class="dropCap">If you are a good web developer and you care about your users, you should have SSL on your website.</p>
+
+<a class="lg-blockquote" target="_blank" href="{{ site.twitterUser }}">“A GOOD DEVELOPER CARES ABOUT SECURITY.”</a>
+
+<p>With <a href="https://github.com/" target="_blank">GitHub</a> being such a great option to host some small projects, websites, and blogs for free, wouldn’t it be nice if we could have that lovely HTTPS up in the search bar? Well for those lame people who just decide to use the default username.github.io/repository URL that GitHub provides, your job is already done. Congratulations! You already have SSL setup on your website.</p>
+
+<p>Unfortunately, for us cool people who prefer having a custom domain on our websites, life's a little harder — but it’s still free.</p>
+
+<p>I am assuming you already have your <a href="https://pages.github.com/" target="_blank">gh-pages</a> hosted website with a custom domain set up. If you don’t know how to add a custom domain to your gh-pages, go read <a href="https://trello.com/c/GEb0Vn1U/31-setting-up-a-custom-domain-on-github" target="_blank">this</a>!</p>
+
+<h4>Before you get started, there is a few things you need.</h4>
+
+<ul>
+  <li>A <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a> account if you don’t already have one (it’s free, so do it). </li>
+  <li>Your website hosted with gh-pages.</li>
+  <li>Access to your domain registrar so you can adjust your DNS (domain name servers).</li>
+  <li>A few moments of patience.</li>
+</ul>
+
+<p class="centeredDesc">If you really have no patience though, you can watch this video instead of reading the rest of these instructions.</p>
+
+<p class="centeredDesc">Insert iFrame tut here</p>
+
+<h4>To get started:</h4>
+
+<ol>
+  <li>Sign in to <a class="https://www.cloudflare.com/" target="_blank">Cloudflare</a> and click “+ Add Site”.</li>
+  <li>Type your domain/domains into the given field and click “Begin Scan”.</li>
+  <li>After Cloudflare scans the domain, click “Continue Setup”.</li>
+  <li>Verify that all of your DNS settings are listed and match what you have on your domain registrar's DNS settings, then click “Continue”.</li>
+  <li>Now you get to select a plan, wooh! You should select the free plan unless you feel that you need to pay for more options. Oh, then click “Continue” again.</li>
+  <li>Cloudflare will show you what your current Nameservers (in your registrar's DNS settings) are and what you need to change them to. Once you have changed them, come back to Cloudflare and click “Continue” yet again.</li>
+  <li>Scroll down to the “Domain Summary” section of the overview page that Cloudflare gives you for your website. Click on your SSL setting, it will probably say something like “SSL: Full”, you’re going to want to click whatever word is in blue.</li>
+  <li>Go ahead and change “Full” to “Flexible”.</li>
+</ol>
+
+<p>Congratulations, you have made it halfway! You should probably take a little break here, you have worked hard to get to this point. Plus it could take up to a few hours (or up to 24 hours if you are an extremely unlucky person) for your website to be active on Cloudflare and accessible with the https protocol.</p>
+
+<p>Here comes the important stuff. We need to tell those great search engines and make our visitors use the SSL version of our site.</p>
+
+<h4>To get finished:</h4>
+
+<p class="noTopPad">Because gh-pages is powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, you should have a “_config.yml” file in the root of your repository. If you don’t, it’s okay, just go and add a “_config.yml” file to the root of your repository.</p>
+
+<ul>
+  <li>Add these two lines in your “_config.yml” file replacing “yoursite.com” with your domain name.
+    <ul>
+      <li>url: https://yoursite.com</li>
+      <li>enforce_ssl: yoursite.com</li>
+    </ul>
+  </li>
+  <li>Add “&lt;link rel="canonical" href="{{ site.url }}{{ page.url }}" /&gt;” in the &lt;head&gt; tag of your site.</li>
+</ul>
+
+<p>All of that is going to let all those search engines that there is an SSL version of your website. Now you just need to redirect your visitors to the more secure version of your website.</p>
+
+<ul>
+  <li>Add this script to your &lt;head&gt; tag</li>
+</ul>
+<p class="centeredDesc">insert codez here</p>
+
+<p class="centeredDesc">You did it! You now have your visitors using the SSL version of your site.</p>
