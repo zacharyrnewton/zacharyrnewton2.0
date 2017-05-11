@@ -30,6 +30,7 @@ github_path: https://github.com/zacharyrnewton
 linkFromTwitter: https%3A%2F%2Fzacharyrnewton.com%2f
 twitterUser: _zacharyrnewton
 
+pathToBlogImgBin: /assets/img/blog/
 # Build settings
 permalink: pretty
 markdown: kramdown

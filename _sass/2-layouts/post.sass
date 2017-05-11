@@ -77,6 +77,7 @@
       color: $secondary
   ul, ol
     font-weight: 300
+    font-family: $font-stack-two
   ul.noMargin, ol.noMargin
     margin: 0
   li
@@ -94,7 +95,15 @@
     cursor: zoom-in
   .underline
     text-decoration: underline
-
+  .highlightCode
+    padding: 2em 2em 2em 4em
+    width: 100%
+    border-radius: .5em
+    background: lighten($secondary, 30%)
+    color: $secondary
+    font-weight: 300
+    overflow: scroll
+    line-height: 2em
 h5.readMoreCTA
   text-align: center
   font-size: 1.2em

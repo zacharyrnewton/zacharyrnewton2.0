@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{% for post in site.posts offset: 0 limit: 1 %}
-<header class="blog-index-header-main" style="background-image:url('{{ site.url }}{{ post.featImg }}')">
+{% for post in site.posts offset: 1 limit: 1 %}
+<header class="blog-index-header-main" style="background-image:url('{{ site.url }}{{ site.pathToBlogImgBin }}{{ post.featImg }}')">
   <div class="overlay-dark"></div>
   {% include nav.html %}
   <div class="blog-index-title">
@@ -14,7 +14,7 @@ layout: default
 <div class="blogIndexWrapper">
   {% for post in site.posts%}
     <div class="blogPostContainer">
-      <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.url }}{{ post.featImg }}');"></a>
+      <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.url }}{{ site.pathToBlogImgBin }}lowRes/{{ post.featImg }}');"></a>
       <a href="" class="blogCategory">{{ post.categories }}</a>
       <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
       <p class="blogExcerpt">{{ post.excerpt }}</p>
