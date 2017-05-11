@@ -20,7 +20,7 @@ layout: default
 <div class="blogReadMoreWrapper">
   {% for post in site.posts limit: 3%}
     <div class="blogPostContainer">
-      <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.url }}{{ post.featImg }}');"></a>
+      <a href="{{ post.url }}" class="blogPostFeatImg" style="background-image: url('{{ site.url }}{{ site.pathToBlogImgBin }}lowRes/{{ post.featImg }}');"></a>
       <a href="" class="blogCategory">{{ post.categories }}</a>
       <a href="{{ post.url }}" class="blogTitle">{{ post.title }}</a>
       <p class="blogExcerpt">{{ post.excerpt }}</p>
