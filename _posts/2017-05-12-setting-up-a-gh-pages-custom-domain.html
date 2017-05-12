@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Setting Up a gh-pages Custom Domain"
+categories: GitHub
+featImg: 2017-05-12-setting-up-a-gh-pages-custom-domain.jpg
+excerpt: "So you want to know how to use a custom Apex domain with your GitHub hosted project. Luckily this is a fairly simple task."
+author: zacharynewton
+---
+<p class="dropCap">Custom domains are great! They allow us to connect to our users in a much nicer way. If you are hosting your project with GitHub, I am sure that you aren’t too fond of the username.github.io/repository url that they give you.</p>
+
+<a class="lg-blockquote" target="_blank" href="https://twitter.com/intent/tweet?text=%E2%80%9CUSE%20A%20CUSTOM%20DOMAIN%20TO%20BETTER%20CONNECT%20WITH%20YOUR%20USERS.%E2%80%9D%20http%3A%2F%2Fbit.ly%2F2r096Cv%20via%20%40{{ site.twitterUser }}">“USE A CUSTOM DOMAIN TO BETTER CONNECT WITH YOUR USERS.”</a>
+
+<p>So you want to know how to use a custom Apex domain with your GitHub hosted project. Luckily this is a fairly simple task. Before we get started, you are obviously going to need a domain name and your repository on GitHub. There are a few main steps that we need to complete &mdash; let’s get it done.</p>
+
+<h4>Step 01.</h4>
+<ol class="noTopPad">
+  <li>Go to your repository on github and click on the “Settings” tab located under your repository’s name.</li>
+  <li>Scroll till you see “Custom domain”, then enter your domain name that you wish to use and hit “Save”.</li>
+</ol>
+
+<p>Hey look at that, we are almost done. Just incase you are curious or you need to know if your custom domain is supported at GitHub, you can read, “<a href="https://help.github.com/articles/about-supported-custom-domains/" target="_blank">About supported custom domains</a>”.</p>
+
+<h4>Step 02.</h4>
+<ol>
+  <li>Go to your DNS settings that your domain registrar gives you and get ready to create just a couple records.</li>
+  <li>Create an “A” record that points to these two IP addresses (these IP addresses point to GitHub).
+    <ul>
+      <li>192.30.252.153</li>
+      <li>192.30.252.154</li>
+    </ul>
+  </li>
+  <li>Now you need to create a “CNAME” record. Set the name to “www” and tell it to point to “username.github.io”, using your github username. If you don’t have normal user account, read <a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/" target="_blank">this</a> and make the necessary changes.</li>
+</ol>
+
+<p>That’s it, you’re done! I bet you weren’t expecting it to be that easy. If your custom domain is not working yet, it could take a few minutes, but go ahead and add a file named “CNAME” to the root of your repository and add these two lines replacing “yourdomain” with your actual domain name.</p>
+
+<pre class="highlightCode">
+yourdomain.com
+www.yourdomain.com
+</pre>
+
+<p>If all else fails and it is still not working, read “<a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/" target="_blank">Adding or removing a custom domain for your GitHub Pages site</a>“ and see if GitHub can help you figure it out in there spiderweb of custom domain setup instructions.</p>
+
+<p>Finally, if you see something in this post that is outdated or no longer working, <a href="{{ site.twitter_path }}" target="_blank">tweet</a> me so I can fix it for you :)</p>
