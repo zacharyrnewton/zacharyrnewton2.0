@@ -34,7 +34,6 @@ pathToBlogImgBin: /assets/img/blog/
 # Build settings
 permalink: pretty
 markdown: kramdown
-# theme: minima
 gems:
   - jekyll-feed
   - jekyll-autoprefixer
@@ -44,3 +43,6 @@ exclude:
   - Gemfile.lock
 sass:
   sass_dir: _sass
+collections:
+  casestudies:
+    output: true
