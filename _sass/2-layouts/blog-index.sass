@@ -43,18 +43,19 @@
       background: $white
       color: $highlight
 .blogIndexWrapper
-  width: 100%
-  max-width: 1200px
-  margin: 100px auto 0 auto
-  padding: 0 20px
   display: flex
   flex-direction: row
   justify-content: space-around
   align-items: baseline
-  //flex-wrap: wrap
+  flex-wrap: wrap
+  width: 100%
+  max-width: 1200px
+  margin: 100px auto 0 auto
+  padding: 0 20px
   @media screen and(max-width: 700px)
     padding: 0
 .blogPostContainer
+  flex: 1 0 auto
   transition: all 0.4s ease-in
   width: 100%
   max-width: 320px
