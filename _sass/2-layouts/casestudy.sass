@@ -1,0 +1,68 @@
+.caseStudyContentWrapper
+  width: 100%
+  max-width: 1000px
+  margin: 100px auto 0 auto
+  padding: 0 20px
+  .overview
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    b
+      font-weight: 600
+    a
+      color: $highlight
+      transition: all 0.3s ease-in-out
+      &:hover
+        color: $secondary
+    .main
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 70%
+      p
+        color: $primary
+        line-height: 1.5em
+        padding: 1.5em 0
+        font-size: 1em
+        font-family: $font-stack-two
+        font-weight: 300
+      .bio
+        width: 100%
+        flex: 1 0 auto
+      .challenge, .result
+        width: 45%
+        flex: 0 0 auto
+    .side
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 25%
+      ul
+        font-family: $font-stack-two
+        font-weight: 300
+        line-height: 1.5em
+        list-style: none
+        padding: 1.5em 0
+        margin: 0
+        li:first-of-type
+          margin-top: .25em
+      a.visitSite
+        text-decoration: underline
+        padding: 1.5em 0
+    @media screen and(max-width: 700px)
+      flex-direction: column
+      .main, .side
+        width: 100%
+        flex-direction: row
+        align-items: baseline
+    @media screen and(max-width: 500px)
+      .main, .side
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        .challenge, .result, .bio
+          width: 100%
+          flex: 1 0 auto
+  hr
+    margin-top: 3em
