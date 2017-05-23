@@ -100,6 +100,28 @@
     overflow: hidden
     border-radius: 3px
     cursor: zoom-in
+  .gallery
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    flex-wrap: wrap
+    border-radius: 3px
+    width: 100%
+    height: auto
+    padding: 5px
+    img
+      flex: 1 1 auto
+      margin: 0.5%
+      width: 25%
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35)
+      &:hover
+        box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.20)
+        transform: translateY(-2px)
+    img.high
+      width: 35%
+    img.low
+      width: 15%
   .underline
     text-decoration: underline
   .highlightCode
