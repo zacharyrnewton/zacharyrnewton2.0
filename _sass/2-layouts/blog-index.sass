@@ -43,19 +43,10 @@
       background: $white
       color: $highlight
 .blogIndexWrapper
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -ms-flex-direction: row
   flex-direction: row
-  -ms-flex-pack: distribute
   justify-content: space-around
-  -webkit-box-align: baseline
-  -ms-flex-align: baseline
   align-items: baseline
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
   width: 100%
   max-width: 1200px
@@ -69,9 +60,11 @@
   width: 100%
   max-width: 320px
   margin: 0 5px 120px 5px
+  flex-basis: 320px
 @media screen and(max-width: 700px)
   .blogPostContainer
     max-width: 100%
+    flex-basis: 100%
     margin: 0 0px 120px 0px
 .blogPostFeatImg
   display: block
