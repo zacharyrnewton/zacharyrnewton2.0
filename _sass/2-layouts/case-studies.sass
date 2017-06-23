@@ -51,3 +51,107 @@
     &:hover
       background: $white
       color: $highlight
+.caseStudiesWrapper
+  width: 100%
+  overflow: hidden
+  .caseStudyPreview
+    margin: 100px 0
+    height: 100vh
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .text
+      max-width: 400px
+      margin: 0 20px 0 100px
+      h1
+        font-size: 2.5em
+        font-weight: 300
+      p
+        font-size: 1em
+        line-height: 2em
+        margin: 10px 0
+      h6
+        font-size: .6em
+        font-weight: 800
+        font-family: $font-stack-two
+        color: $primary
+        opacity: 0.8
+        margin: 30px 0 10px 0
+      a
+        display: inline-block
+        color: $highlight
+        font-family: $font-stack-two
+        font-weight: 700
+        font-size: .8em
+        padding: .25em 1em
+        border: 2px solid $highlight
+        border-radius: 3px
+        &:hover
+          color: $secondary
+          border: 2px solid $secondary
+    .imgWrapper
+      width: 50%
+      height: 100%
+      img
+        height: 100%
+    @media screen and(max-width: 815px)
+      flex-direction: column
+      height: auto
+      .text
+        margin: 0 20px 50px 20px
+      .imgWrapper
+        height: 400px
+        img
+          height: 100%
+  .caseStudyPreview.reverse
+    margin: 100px 0
+    height: 100vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row-reverse
+    .text
+      max-width: 400px
+      margin: 0 100px 0 20px
+      h1
+        font-size: 2.5em
+        font-weight: 300
+      p
+        font-size: 1em
+        line-height: 2em
+        margin: 10px 0
+      h6
+        font-size: .6em
+        font-weight: 800
+        font-family: $font-stack-two
+        color: $primary
+        opacity: 0.8
+        margin: 30px 0 10px 0
+      a
+        display: inline-block
+        color: $highlight
+        font-family: $font-stack-two
+        font-weight: 700
+        font-size: .8em
+        padding: .25em 1em
+        border: 2px solid $highlight
+        border-radius: 3px
+        &:hover
+          color: $secondary
+          border: 2px solid $secondary
+    .imgWrapper
+      width: 50%
+      height: 100%
+      img
+        float: right
+    @media screen and(max-width: 815px)
+      flex-direction: column
+      height: auto
+      .text
+        margin: 0 20px 50px 20px
+      .imgWrapper
+        height: 400px
+        img
+          transform: translateX(0)
+          height: 100%
