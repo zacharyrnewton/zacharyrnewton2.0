@@ -69,6 +69,69 @@
           flex: 1 0 auto
   hr
     margin: 3em auto
+  .spacer
+    width: 100%
+    height: 4em
+  h4
+    font-family: $font-stack
+    font-weight: 500
+    font-size: 1.5em
+    color: $primary
+    padding-top: .5em
+
+  br
+    line-height: 2em
+  p
+    font-family: $font-stack-two
+    font-weight: 300
+    color: $primary
+    line-height: 2em
+    padding: 2em 0
+  .dropCap::first-letter
+    font-size: 3.5em
+    font-weight: 400
+    font-family: $font-stack
+    color: $highlight
+  .centeredDesc
+    text-align: center
+  .noPad
+    padding: 0
+  .noTopPad
+    padding-top: 0
+  .noBottomPad
+    padding-bottom: 0
+  a
+    color: $highlight
+    font-weight: 600
+    cursor: pointer
+    &:hover
+      color: $secondary
+  a.lg-blockquote
+    font-family: $font-stack
+    font-size: 2em
+    font-weight: 200
+    color: $highlight
+    line-height: 1.5em
+    display: block
+    text-align: center
+    margin: 1em auto
+    max-width: 500px
+    transition: all 0.3s ease-in-out
+    &:hover
+      color: $secondary
+  ul, ol
+    font-weight: 300
+    font-family: $font-stack-two
+  ul.noMargin, ol.noMargin
+    margin: 0
+  li
+    line-height: 1.5em
+    margin-bottom: 1em
+  li:last-of-type
+    margin-bottom: 0
+  ul,ol
+    ul,ol
+      margin-top: 1em
   img
     display: block
     width: 100%
