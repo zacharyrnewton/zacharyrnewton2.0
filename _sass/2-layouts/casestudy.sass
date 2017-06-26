@@ -140,6 +140,10 @@
     overflow: hidden
     border-radius: 3px
     cursor: zoom-in
+  img.small
+    width: 25%
+  img.medium
+    width: 50%
   .gallery
     display: flex
     flex-direction: row
@@ -162,3 +166,8 @@
       width: 35%
     img.low
       width: 15%
+  .gallery.square
+    img
+      width: 15vw
+      height: 15vw
+      object-fit: cover
