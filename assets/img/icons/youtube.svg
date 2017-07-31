@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="YouTube_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="1024px" height="721px" viewBox="0 0 1024 721" enable-background="new 0 0 1024 721" xml:space="preserve">
+<path id="Triangle" fill="#FFFFFF" d="M407,493l276-143L407,206V493z"/>
+<path id="The_Sharpness" opacity="0.12" fill-rule="evenodd" clip-rule="evenodd" fill="#420000" d="M407,206l242.042,161.625
+	L683,350L407,206z"/>
+<g id="Lozenge">
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="512.499" y1="1.2959" x2="512.499" y2="719.7192">
+			<stop  offset="0" style="stop-color:#E52D27"/>
+			<stop  offset="1" style="stop-color:#BF171D"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" d="M1013.023,156.281c0,0-9.981-70.389-40.606-101.386c-38.842-40.684-82.38-40.885-102.346-43.267
+			C727.134,1.296,512.721,1.296,512.721,1.296h-0.444c0,0-214.408,0-357.35,10.333c-19.967,2.381-63.49,2.583-102.346,43.267
+			C21.956,85.892,11.99,156.281,11.99,156.281S1.775,238.94,1.775,321.6v77.493c0,82.658,10.215,165.317,10.215,165.317
+			s9.966,70.39,40.591,101.387c38.856,40.684,89.896,39.397,112.629,43.661c81.718,7.836,347.29,10.261,347.29,10.261
+			s214.634-0.323,357.571-10.655c19.966-2.382,63.504-2.583,102.346-43.267c30.625-30.997,40.606-101.387,40.606-101.387
+			s10.2-82.659,10.2-165.317V321.6C1023.224,238.94,1013.023,156.281,1013.023,156.281z M407.047,493L407,206l276,144L407.047,493z"
+			/>
+	</g>
+</g>
+</svg>

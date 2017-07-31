@@ -76,10 +76,22 @@ footer.footer-wrapper
       display: inline-block
       height: 50px
       width: 50px
-      border-radius: 100%
       overflow: hidden
       &:hover
         transform: scale(.95)
+    .footer-youtube-wrapper, .footer-twitter-wrapper, .footer-instagram-wrapper
+      background:
+        size: contain
+        position: center center
+        repeat: no-repeat
+    .footer-youtube-wrapper
+      background-image: url('../img/icons/youtube.svg')
+    .footer-twitter-wrapper
+      background-image: url('../img/icons/twitter.svg')
+    .footer-instagram-wrapper
+      background-image: url('../img/icons/instagram.svg')
+      background:
+        size: 35px
   a.footer-email
     transition: all .2s ease-in
     font-family: $font-stack
@@ -87,11 +99,9 @@ footer.footer-wrapper
     color: $secondary
     &:hover
       color: $primary
-
 .social-icon
   height: 100%
   width: auto
-
 input
   outline: none
   border-radius: 0
