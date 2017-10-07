@@ -7,20 +7,16 @@ header.header-main
   justify-content: center
   align-items: center
   width: 100%
-  height: 500px
+  height: 100vh
   max-height: 100vh
-  background: $secondary
-    size: cover
-    position: center center
-    repeat: no-repeat
   .home-title
     position: relative
     z-index: 5
     text-align: center
     padding-top: 50px
     h1
-      font-size: 3.125em
-      font-weight: 400
+      font-size: 4em
+      font-weight: 700
       line-height: 1.2em
       padding: 0 20px 5px 20px
       @media screen and(max-width: 500px)
@@ -30,36 +26,51 @@ header.header-main
       @media screen and(max-width: 360px)
         font-size: 1.875em
     h3
-      font-size: 1.250em
-      font-weight: 400
+      font-size: 1.5em
+      font-weight: 300
       line-height: 1.2em
-  a.home-avatar
-    transition: all 0.3s ease-in
-    position: absolute
-    z-index: 5
-    bottom: 0
-    left: 0
-    right: 0
-    margin: auto
-    width: 100px
-    height: 100px
-    border-radius: 100%
-    margin-bottom: -60px
-    background:
-      image: url('../img/zacharynewton/avatar.jpg')
-      size: cover
-      position: center center
-      repeat: no-repeat
-    box-shadow: 0 3px 6px 0px rgba(0,0,0,.25)
-    @media screen and(max-width: 355px)
-      height: 75px
-      width: 75px
-      margin-bottom: -43px
+      color: $secondary
+      opacity: .45
+    .buttonsWrapper
+      margin:  25px auto 0 auto
+      height: auto
+      width: 100%
+      max-width: 400px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      .buttonSecondary
+        display: block
+        color: $highlight
+        font-size: 1em
+        font-weight: 600
+        text-transform: uppercase
+        padding: .5em 1em
+        border: 1px solid $highlight
+        border-radius: 28px
+        margin: 0 20px 0 0
+        box-sizing: border-box
+        flex: 1 1 0
+        cursor: pointer
+      .buttonPrimary
+        display: block
+        color: $white
+        font-size: 1em
+        font-weight: 600
+        text-transform: uppercase
+        padding: .5em 1em
+        border: 1px solid $highlight
+        background: $highlight
+        border-radius: 28px
+        margin: 0 0 0 20px
+        box-sizing: border-box
+        flex: 1 1 0
+        cursor: pointer
+
 //Who is he
 .who-is-he
-  max-width: 600px
-  margin: 160px auto 100px auto
-  padding: 0 20px
+  width: 100%
+  background: hsl(222,8,99)
   h2
     padding-bottom: 17px
     font-weight: 400
